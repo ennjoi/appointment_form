@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Materialize Form</title>
+  <link rel="stylesheet" type="text/css" href="styleform.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1 class="center-align">予約</h1>
+    </div>
+    <div class="row">
+      <form class="col s12" action="https://formspree.io/paulo.e.aquino@gmail.com" method="POST">
+        
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate" name="氏">
+            <label for="first_name">氏</label>
+          </div>
+          
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate" name="名">
+            <label for="last_name">名</label>
+          </div>  
+        </div>
+        
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate" name="メール">
+            <label for="email">メール</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="appointment" placeholder="月日" type="date" class="datepicker" name="月日">
+          </div>
+          <div class="input-field col s6">
+            <select name="時間">
+              <option value="" selected>時間</option>
+              <option value="09:30 AM">09:30 AM</option>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="10:30 AM">10:30 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="11:30 AM">11:30 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="13:00 PM">13:00 PM</option>
+              <option value="13:30 PM">13:30 PM</option>
+              <option value="14:00 PM">14:00 PM</option>
+              <option value="14:30 PM">14:30 PM</option>
+              <option value="15:00 PM">15:00 PM</option>
+              <option value="15:30 PM">15:30 PM</option>
+              <option value="16:00 PM">16:00 PM</option>
+              <option value="16:30 PM">16:30 PM</option>
+              <option value="17:00 PM">17:00 PM</option>
+              <option value="17:30 PM">17:30 PM</option>
+              <option value="18:00 PM">18:00 PM</option>
+            </select>
+            <label>Time</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" type="text" class="materialize-textarea" name="メッセージ"></textarea>
+            <label for="textarea1">メッセージ</label>
+          </div>
+        </div>
+
+        <button class="btn waves-effect waves-light red lighten-1" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+
+      </form>
+    </div>
+  </div>
+<!-- scripts -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
